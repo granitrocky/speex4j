@@ -7,7 +7,9 @@ plugins {
 }
 
 group = 'de.maxhenkel.speex4j'
-archivesBaseName = 'speex4j'
+base {
+    archivesName = 'speex4j'
+}
 version = library_version
 
 java {
