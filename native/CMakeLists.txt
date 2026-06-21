@@ -38,10 +38,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(speex)
 
-string(REPLACE "-Wl,--fatal-warnings" "" CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}")
-string(REPLACE "-Wl,--fatal-warnings" "" CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS}")
-string(REPLACE "-Wl,--fatal-warnings" "" CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS}")
-
 add_library(speex4j SHARED
         src/agc.c
         src/exceptions.c
